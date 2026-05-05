@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #ffffff;
+  --bg-muted: #f2f1ec;
+  --fg: #0d0d0d;
+  --fg-muted: #6b6b6b;
+  --border: #e0dfd8;
+  --accent: #0d0d0d;
+  --font: var(--font-geist), "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input, textarea, button, select {
+    font-family: var(--font);
+  }
+}
+
+/* Placeholder image with gradient */
+.img-placeholder {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #2a2a2a 100%);
+}
+
+.img-placeholder-light {
+  background: linear-gradient(135deg, #e8e4dc 0%, #d4cfc5 50%, #e8e4dc 100%);
+}
+
+/* Gradient blob for CTA */
+.gradient-blob {
+  background: radial-gradient(
+      ellipse at 30% 20%,
+      #7bb8f0 0%,
+      transparent 50%
+    ),
+    radial-gradient(ellipse at 70% 60%, #b8a0f0 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, #f0c060 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, #f07080 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, #80d0a0 0%, transparent 60%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-muted);
+}
+::-webkit-scrollbar-thumb {
+  background: #c0bdb5;
+  border-radius: 3px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
