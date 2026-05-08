@@ -253,7 +253,7 @@ const uk = {
         ],
     },
     nexusBrand: {
-        title: 'Nexus — Екосистема виробничних рішень',
+        title: 'Nexus — екосистема виробничних рішень',
         desc: "Ми поєднуємо виробничі потужності, технології та людей, щоб забеспечити точність, якість і надійність на кожному етапі.",
         traits: ['Інтелектуальний', 'Мережевий', 'Масштабний'],
         points: [
@@ -596,8 +596,8 @@ const en: typeof uk = {
         ],
     },
     nexusBrand: {
-        title: 'Nexus — the hub of a factory network',
-        desc: 'Nexus means "connection" or "center of interweaving." We position ourselves as the core of a factory ecosystem — where every plant reinforces the others, and every client gets a single entry point into a full production cycle.',
+        title: 'Nexus — ecosystem of manufacturing solutions',
+        desc: 'We combine production capabilities, technology, and people to ensure precision, quality, and reliability at every stage.',
         traits: ['Intellectual', 'Networked', 'Scalable'],
         points: [
             {
