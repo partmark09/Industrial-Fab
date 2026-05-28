@@ -1,5 +1,7 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { useT, useLang } from '../i18n/LangContext';
 import type { Lang } from '../i18n/translations';
 
@@ -156,26 +158,30 @@ export default function Navbar() {
     const t = useT();
 
     const links = [
-        { label: t.nav.services, href: '#services' },
-        { label: t.nav.industries, href: '#industries' },
-        { label: t.nav.cases, href: '#cases' },
-        { label: t.nav.about, href: '#about' },
-        { label: t.nav.quality, href: '#quality' },
+        { label: t.nav.services, href: '/#services' },
+        { label: t.nav.industries, href: '/#industries' },
+        { label: t.nav.cases, href: '/#cases' },
+        { label: t.nav.about, href: '/#about' },
+        { label: t.nav.quality, href: '/#quality' },
+        { label: t.nav.defence, href: '/defence' },
     ];
 
     return (
         <header className="fixed top-0 left-0 right-0 z-[100] bg-white/[0.92] backdrop-blur-[12px] border-b border-(--border)">
             <div className="max-w-7xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
-                <a
-                    href="#"
+                <Link
+                    href="/"
                     className="font-bold tracking-[-0.03em] text-(--fg) no-underline"
                 >
-                    <img
-                        className="h-7 md:h-9 py-1 "
+                    <Image
                         src="logos/logo.png"
                         alt="Logo"
+                        width={120}
+                        height={34}
+                        className="h-7 md:h-9 py-1 w-auto"
+                        priority
                     />
-                </a>
+                </Link>
 
                 <nav className="hidden md:flex gap-8 items-center">
                     {links.map((l) => (
@@ -188,12 +194,12 @@ export default function Navbar() {
                         </a>
                     ))}
                     <LangDropdown />
-                    <a
-                        href="#quote"
+                    <Link
+                        href="/#quote"
                         className="bg-(--fg) text-white py-2.5 px-5.5 rounded-full text-sm font-semibold no-underline transition-opacity duration-200 hover:opacity-80"
                     >
                         {t.nav.cta}
-                    </a>
+                    </Link>
                 </nav>
 
                 <div className="flex md:hidden items-center gap-3">
@@ -239,13 +245,13 @@ export default function Navbar() {
                             {l.label}
                         </a>
                     ))}
-                    <a
-                        href="#quote"
+                    <Link
+                        href="/#quote"
                         onClick={() => setOpen(false)}
                         className="bg-(--fg) text-white py-3.5 px-7 rounded-full text-[15px] font-semibold no-underline text-center"
                     >
                         {t.nav.cta}
-                    </a>
+                    </Link>
                 </div>
             )}
         </header>

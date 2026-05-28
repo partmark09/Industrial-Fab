@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useT } from '../i18n/LangContext';
 
 export default function Footer() {
@@ -6,11 +7,12 @@ export default function Footer() {
     const year = new Date().getFullYear();
 
     const navLinks = [
-        { label: t.nav.services, href: '#services' },
-        { label: t.nav.industries, href: '#industries' },
-        { label: t.nav.cases, href: '#cases' },
-        { label: t.nav.about, href: '#about' },
-        { label: t.nav.quality, href: '#quality' },
+        { label: t.nav.services, href: '/#services' },
+        { label: t.nav.industries, href: '/#industries' },
+        { label: t.nav.cases, href: '/#cases' },
+        { label: t.nav.about, href: '/#about' },
+        { label: t.nav.quality, href: '/#quality' },
+        { label: t.nav.defence, href: '/defence' },
     ];
 
     return (
@@ -19,10 +21,12 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 pb-10 md:pb-16 border-b border-white/10">
                     <div className="max-w-72">
                         <div className="font-bold text-2xl tracking-[-0.03em] mb-4">
-                            <img
-                                className="h-7 md:h-9 py-1 invert "
+                            <Image
                                 src="logos/logo.png"
                                 alt="Logo"
+                                width={120}
+                                height={34}
+                                className="h-7 md:h-9 py-1 invert w-auto"
                             />
                         </div>
                         <p className="text-sm text-white/50 leading-[1.7] mb-7">

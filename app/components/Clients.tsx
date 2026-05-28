@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import { useT } from '../i18n/LangContext';
 
 const clients = [
@@ -37,11 +38,13 @@ export default function Clients() {
               key={name}
               className="bg-white rounded-2xl py-8 px-5 flex flex-col items-center gap-4 transition-all duration-200 cursor-default hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)]"
             >
-              <div className="w-20 h-10 flex items-center justify-center">
-                <img
+              <div className="w-20 h-10 relative">
+                <Image
                   src={logo}
                   alt={name}
-                  className="max-w-full max-h-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="80px"
                 />
               </div>
               <span className="text-[13px] font-semibold text-(--fg) text-center">

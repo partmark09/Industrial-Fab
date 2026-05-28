@@ -36,7 +36,6 @@
 - [modular-unit-2](./modular-unit-2.jpeg)
 - [modular-unit-3](./modular-unit-3.jpeg)
 - [modular-unit-4](./modular-unit-4.jpeg)
-- [modular-unit-5](./modular-unit-5.jpeg)
 
 ## Польові кухні
 

@@ -51,6 +51,7 @@ export default function Cases() {
                     <div className="columns-2 sm:columns-3 lg:columns-4 gap-2 *:mb-2">
                         {photos.map((src, i) => (
                             <div key={i} className="break-inside-avoid overflow-hidden rounded-xl">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={src}
                                     alt=""

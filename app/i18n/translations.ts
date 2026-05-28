@@ -7,6 +7,7 @@ const uk = {
         cases: 'Кейси',
         about: 'Про нас',
         quality: 'Якість',
+        defence: 'Оборона',
         cta: 'Надіслати креслення',
     },
     hero: {
@@ -154,6 +155,79 @@ const uk = {
                 desc: 'Виготовлення металевих елементів і конструкцій для оборонної та безпекової сфери',
                 detail: 'Бронекорпуси, захисні елементи, спеціалізовані конструкції',
                 img: '/images/industries/defense.jpg',
+                link: '/defence',
+            },
+        ],
+    },
+    defence: {
+        badge: 'Рішення для оборони',
+        title: 'Наші товари та рішення',
+        subtitle:
+            'Металеві вироби, конструкції та модульні рішення для оборонної та безпекової сфери — від окремих компонентів до комплексних систем під ключ',
+        items: [
+            {
+                title: 'Лафети та причепи спеціального призначення',
+                desc: 'Виготовляємо посилені лафети та спеціалізовані причепи для транспортування квадроциклів, багі, генераторів, обладнання РЕБ, військової техніки та вантажів. Конструкції розраховані на експлуатацію у складних умовах, мають підсилену раму, антикорозійне покриття та можливість індивідуального доопрацювання під задачу Замовника.',
+                images: ['/images/defence/lawn-trailer-frame.png'],
+            },
+            {
+                title: 'Фортифікаційні споруди',
+                desc: 'Металеві укриття та захисні споруди з гофрованої сталі для захисту персоналу, техніки та критичної інфраструктури. Оснащуються вентиляцією, піччю, аварійними виходами та можуть встановлюватися в короткі терміни без складних будівельних робіт.',
+                images: ['/images/defence/fortification-shelter-1.jpeg'],
+            },
+            {
+                title: 'Конструкції для РЕБ',
+                desc: 'Опорні та монтажні конструкції для обладнання РЕБ, антенних систем та спеціальних комплексів. Виготовлення під індивідуальні задачі з урахуванням мобільності, швидкого монтажу та роботи в польових умовах.',
+                images: [
+                    '/images/defence/ew-structure-1.jpeg',
+                    '/images/defence/ew-structure-2.jpeg',
+                ],
+            },
+            {
+                title: 'Модульні споруди',
+                desc: 'Житлові, штабні, санітарні, кухонні та технічні модулі для ЗСУ, ДСНС та польового використання. Швидкий монтаж, утеплення, автономні системи, електроживлення, вентиляція та індивідуальна комплектація під задачі Замовника.',
+                images: [
+                    '/images/defence/modular-unit-4.png',
+                    '/images/defence/modular-unit-1.jpeg',
+                    '/images/defence/modular-unit-2.png',
+                    '/images/defence/modular-unit-3.png',
+                ],
+            },
+            {
+                title: 'Польові кухні',
+                desc: 'Мобільні кухонні модулі для приготування та зберігання їжі в польових умовах. Можливість індивідуальної комплектації обладнанням.',
+                images: [
+                    '/images/defence/field-kitchen-1.jpeg',
+                    '/images/defence/field-kitchen-2.jpeg',
+                    '/images/defence/field-kitchen-3.png',
+                ],
+            },
+            {
+                title: 'Котельні 97 кВт, 200 кВт',
+                desc: 'Споруда блочно-модульна для котельні призначена для нагріву води альтернативними видами палива (дровами) в польових умовах, що використовується при опаленні приміщень. Котельня оснащена: насосами, системою підготовки води, накопичувальною (буферною) ємністю для води, котлом твердопаливним з контролером, димоходом, резервним генератором, освітленням, системою блискавкозахисту.',
+                images: [
+                    '/images/defence/boiler-house-1.jpeg',
+                    '/images/defence/boiler-house-2.jpeg',
+                ],
+            },
+            {
+                title: 'Металеві укриття',
+                desc: 'Сучасні металеві укриття для безпеки персоналу та критичних об\'єктів. Міцність, мобільність та швидке розгортання без складних будівельних робіт.',
+                images: [
+                    '/images/defence/shelter-metal-1.png',
+                    '/images/defence/shelter-metal-2.png',
+                    '/images/defence/shelter-metal-3.png',
+                ],
+            },
+            {
+                title: 'Санітарні модулі',
+                desc: 'Душові, туалетні, пральні та комбіновані санітарні модулі для автономного використання в польових умовах.',
+                images: [
+                    '/images/defence/sanitary-module-1.jpeg',
+                    '/images/defence/sanitary-module-2.jpeg',
+                    '/images/defence/sanitary-module-3.jpeg',
+                    '/images/defence/sanitary-module-4.jpeg',
+                ],
             },
         ],
     },
@@ -350,6 +424,7 @@ const en: typeof uk = {
         cases: 'Cases',
         about: 'About',
         quality: 'Quality',
+        defence: 'Defence',
         cta: 'Send Drawing',
     },
     hero: {
@@ -497,6 +572,79 @@ const en: typeof uk = {
                 desc: 'Manufacturing metal elements and structures for the defence and security sector',
                 detail: 'Armoured hulls, protective elements, specialised structures',
                 img: '/images/industries/defense.jpg',
+                link: '/defence',
+            },
+        ],
+    },
+    defence: {
+        badge: 'Defence Solutions',
+        title: 'Our products and solutions',
+        subtitle:
+            'Metal products, structures and modular solutions for the defence and security sector — from individual components to complete turnkey systems',
+        items: [
+            {
+                title: 'Special-Purpose Gun Carriages & Trailers',
+                desc: 'We manufacture reinforced gun carriages and specialized trailers for transporting ATVs, buggies, generators, EW equipment, military vehicles and cargo. Structures are designed for operation in harsh conditions, feature a reinforced frame, anti-corrosion coating and can be customised to the Customer\'s specific task.',
+                images: ['/images/defence/lawn-trailer-frame.png'],
+            },
+            {
+                title: 'Fortification Shelters',
+                desc: 'Metal shelters and protective structures made of corrugated steel for personnel, equipment and critical infrastructure protection. Equipped with ventilation, stove, emergency exits and can be installed in a short time without complex construction work.',
+                images: ['/images/defence/fortification-shelter-1.jpeg'],
+            },
+            {
+                title: 'EW Structures',
+                desc: 'Support and mounting structures for electronic warfare equipment, antenna systems and special complexes. Manufactured to individual requirements with consideration for mobility, fast installation and field operation.',
+                images: [
+                    '/images/defence/ew-structure-1.jpeg',
+                    '/images/defence/ew-structure-2.jpeg',
+                ],
+            },
+            {
+                title: 'Modular Units',
+                desc: 'Living, command, sanitary, kitchen and technical modules for the Armed Forces, emergency services and field use. Quick assembly, insulation, autonomous systems, power supply, ventilation and custom configuration to the Customer\'s needs.',
+                images: [
+                    '/images/defence/modular-unit-4.png',
+                    '/images/defence/modular-unit-1.jpeg',
+                    '/images/defence/modular-unit-2.png',
+                    '/images/defence/modular-unit-3.png',
+                ],
+            },
+            {
+                title: 'Field Kitchens',
+                desc: 'Mobile kitchen modules for preparing and storing food in field conditions. Can be individually equipped to order.',
+                images: [
+                    '/images/defence/field-kitchen-1.jpeg',
+                    '/images/defence/field-kitchen-2.jpeg',
+                    '/images/defence/field-kitchen-3.png',
+                ],
+            },
+            {
+                title: 'Boiler Houses 97 kW, 200 kW',
+                desc: 'Block-modular boiler house structures for heating water with alternative fuels (firewood) in field conditions, used for space heating. Equipped with pumps, water treatment system, buffer tank, solid fuel boiler with controller, chimney, backup generator, lighting and lightning protection system.',
+                images: [
+                    '/images/defence/boiler-house-1.jpeg',
+                    '/images/defence/boiler-house-2.jpeg',
+                ],
+            },
+            {
+                title: 'Metal Shelters',
+                desc: 'Modern metal shelters for personnel and critical facility safety. Strength, mobility and rapid deployment without complex construction work.',
+                images: [
+                    '/images/defence/shelter-metal-1.png',
+                    '/images/defence/shelter-metal-2.png',
+                    '/images/defence/shelter-metal-3.png',
+                ],
+            },
+            {
+                title: 'Sanitary Modules',
+                desc: 'Shower, toilet, laundry and combined sanitary modules for autonomous field use.',
+                images: [
+                    '/images/defence/sanitary-module-1.jpeg',
+                    '/images/defence/sanitary-module-2.jpeg',
+                    '/images/defence/sanitary-module-3.jpeg',
+                    '/images/defence/sanitary-module-4.jpeg',
+                ],
             },
         ],
     },

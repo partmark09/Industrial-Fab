@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import FadeIn from './FadeIn';
 import { useT } from '../i18n/LangContext';
 
@@ -22,9 +23,11 @@ export default function Industries() {
         </FadeIn>
 
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {t.industries.items.map((ind, i) => (
-            <FadeIn key={ind.title} delay={i * 60} className="h-full">
-              <div className="h-full flex flex-col items-center text-center py-9 px-6 rounded-[20px] bg-(--bg-muted) transition-all duration-250 cursor-default hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)]">
+          {t.industries.items.map((ind, i) => {
+            const card = (
+              <div
+                className={`h-full flex flex-col items-center text-center py-9 px-6 rounded-[20px] bg-(--bg-muted) transition-all duration-250 ${ind.link ? 'cursor-pointer group' : 'cursor-default'} hover:-translate-y-1.5 hover:shadow-[0_16px_48px_rgba(0,0,0,0.08)]`}
+              >
                 <div className="w-40 h-40 rounded-full mb-7 relative overflow-hidden bg-(--bg-muted)">
                   <Image
                     src={ind.img}
@@ -44,8 +47,20 @@ export default function Industries() {
                   {ind.detail}
                 </p>
               </div>
-            </FadeIn>
-          ))}
+            );
+
+            return (
+              <FadeIn key={ind.title} delay={i * 60} className="h-full">
+                {ind.link ? (
+                  <Link href={ind.link} className="block no-underline h-full">
+                    {card}
+                  </Link>
+                ) : (
+                  card
+                )}
+              </FadeIn>
+            );
+          })}
         </div>
       </div>
     </section>
