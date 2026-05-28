@@ -203,7 +203,7 @@ const uk = {
                 ],
             },
             {
-                title: 'Котельні 97 кВт, 200 кВт',
+                title: 'Котельні 97 кВт, 600 кВт',
                 desc: 'Споруда блочно-модульна для котельні призначена для нагріву води альтернативними видами палива (дровами) в польових умовах, що використовується при опаленні приміщень. Котельня оснащена: насосами, системою підготовки води, накопичувальною (буферною) ємністю для води, котлом твердопаливним з контролером, димоходом, резервним генератором, освітленням, системою блискавкозахисту.',
                 images: [
                     '/images/defence/boiler-house-1.jpeg',
@@ -620,7 +620,7 @@ const en: typeof uk = {
                 ],
             },
             {
-                title: 'Boiler Houses 97 kW, 200 kW',
+                title: 'Boiler Houses 97 kW, 600 kW',
                 desc: 'Block-modular boiler house structures for heating water with alternative fuels (firewood) in field conditions, used for space heating. Equipped with pumps, water treatment system, buffer tank, solid fuel boiler with controller, chimney, backup generator, lighting and lightning protection system.',
                 images: [
                     '/images/defence/boiler-house-1.jpeg',
